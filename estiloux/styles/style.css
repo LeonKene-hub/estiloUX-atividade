@@ -7,14 +7,13 @@
     box-sizing: border-box;
 }
 
+/* configurações gerais */
 body {
     font-family: 'Quicksand', sans-serif;
-    color: gray;
+    background-color: rgb(170, 170, 170);
 }
-/* configurações gerais */
-
 .container-grid {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -41,4 +40,46 @@ header h1 {
 header nav a {
     color: white;
     text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+/* corpo principal */
+section{
+    width: 75%;
+    border: 1px solid red;
+}
+img{
+    width: 100%;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    width: 20%;
+    border: 1px solid blue;
+}
+.main-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+p, h2{
+    margin: 10px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 150px;
+    padding: 10px;
+    align-items: center;
 }
