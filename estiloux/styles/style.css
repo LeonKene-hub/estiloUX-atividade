@@ -10,7 +10,7 @@
 /* configurações gerais */
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(211, 211, 211);
 }
 .container-grid {
     width: 90%;
@@ -20,7 +20,7 @@ body {
 /* Cabeçalho*/
 
 header {
-    background-color: gray;
+    background-color: #808080;
 }
 .header-flex {
     display: flex;
@@ -50,9 +50,17 @@ nav {
 }
 
 /* corpo principal */
+.main-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 530px;
+}
+
 section{
     width: 75%;
-    border: 1px solid red;
+    background-color: white;
+    color: gray;
 }
 img{
     width: 100%;
@@ -61,13 +69,7 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
-    width: 20%;
-    border: 1px solid blue;
-}
-.main-flex {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    width: 23%;
 }
 
 p, h2{
@@ -78,8 +80,57 @@ article{
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    height: 150px;
+    height: max-content;
     padding: 10px;
     align-items: center;
+    color: gray;
+}
+input{
+    border-color: rgb(211, 211, 211);
+    border-style: solid;
+}
+#pesquisa-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+#pesquisa{
+    height: 25px;
+    width: 185px;
+}
+ul{
+    padding-left: 30px;
+}
+#p3{
+    text-align: center;
+}
+button{
+    width: 40px;
+    height: 25px;
+    background-color: #808080;
+    border-color: transparent;
+}
+
+#email{
+    height: 25px;
+}
+.article-h3{
+    height: 2px;
+    width: 110%;
+    margin: 10px;
+    background-color: rgb(211, 211, 211);
+}
+
+/* Parte do rodapé */
+
+footer {
+    background-color: #808080;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
+
+footer div p {
+    color: white;
 }
