@@ -14,29 +14,28 @@ body {
 }
 .container-grid {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto; /* margens laterais  e centralizadas automaticamente*/
+    max-width: 1200px;
 }
 
 /* Cabeçalho*/
-
 header {
     background-color: #808080;
 }
 .header-flex {
     display: flex;
     justify-content: space-between;
+    padding: 5px 0px;
+    padding-right: 50px;
 }
-
 header h1 {
     color: white;
     font-weight: 300;
 }
-
 #logoux {
     font-weight: 600;
     font-style: italic;
 }
-
 header nav a {
     color: white;
     text-decoration: none;
@@ -51,36 +50,37 @@ nav {
 
 /* corpo principal */
 .main-flex {
+    /* separa o main e coluna */
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    height: 530px;
+    margin-top: 30px;
+    height: max-content;
 }
-
 section{
     width: 75%;
+    line-height: 20px;
     background-color: white;
     color: gray;
 }
 img{
     width: 100%;
 }
+p, h2{
+    margin: 10px;
+}
+
+/* coluna lateral */
 aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
     width: 23%;
 }
-
-p, h2{
-    margin: 10px;
-}
-
 article{
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    height: max-content;
+    height: fit-content;
     padding: 10px;
     align-items: center;
     color: gray;
@@ -89,31 +89,46 @@ input{
     border-color: rgb(211, 211, 211);
     border-style: solid;
 }
+h3{
+    text-transform: uppercase;
+}
+
+/* 1° article */
 #pesquisa-flex{
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
 #pesquisa{
-    height: 25px;
-    width: 185px;
-}
-ul{
-    padding-left: 30px;
-}
-#p3{
-    text-align: center;
+    height: 35px;
+    width: 75%;
+    margin: 2px;;
 }
 button{
-    width: 40px;
-    height: 25px;
+    width: 15%;
+    height: 35px;
+    margin: 2px;
     background-color: #808080;
     border-color: transparent;
 }
 
-#email{
-    height: 25px;
+/* 2° article */
+ul{
+    padding-left: 30px;
+    margin-bottom: 2px;
 }
+
+/* 3° article */
+#p3{
+    text-align: center;
+}
+#email{
+    height: 35px;
+    width: 90%;
+    margin-bottom: 2px;
+}
+
+/* linha de marcação dos articles */
 .article-h3{
     height: 2px;
     width: 110%;
@@ -122,13 +137,13 @@ button{
 }
 
 /* Parte do rodapé */
-
 footer {
     background-color: #808080;
-    height: 50px;
+    height: max-content ;
     width: 100%;
     position: absolute;
     bottom: 0%;
+    padding: 4px 0px;
 }
 
 footer div p {
